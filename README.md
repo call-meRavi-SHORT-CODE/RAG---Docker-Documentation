@@ -1,1 +1,1 @@
-![Inputs](architecture.png)
+![Inputs](Docker_Documnetation.png)
