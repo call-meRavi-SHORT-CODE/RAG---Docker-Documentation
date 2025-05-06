@@ -1,0 +1,10 @@
+flask
+python-dotenv
+bs4
+langchain
+langchain-community
+langchain-core
+huggingface-hub
+transformers
+faiss-cpu
+grok-client

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAG QA Interface</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Ask Docker Docs</h1>
+    <form method="post">
+      <textarea name="prompt" placeholder="Enter your question..." required>{{ request.form.prompt or '' }}</textarea>
+      <button type="submit">Ask</button>
+    </form>
+
+    {% if answer %}
+      <div class="answer">
+        <h2>Answer:</h2>
+        <pre>{{ answer }}</pre>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
