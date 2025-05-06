@@ -24,7 +24,7 @@ load_dotenv()
 app = Flask(__name__)
 
 DOC_URL = "https://docs.docker.com/get-started/docker-overview/"
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "Your_Groq_api"
 
 
 
